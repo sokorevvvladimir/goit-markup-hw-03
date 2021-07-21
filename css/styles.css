@@ -8,14 +8,6 @@
   --secondary-text: #212121;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 body {
   color: var(--primary-text);
   background-color: var(--primary-color);
@@ -46,6 +38,8 @@ body {
 
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Header */
@@ -83,6 +77,12 @@ body {
 .hero,
 .footer {
   background-color: var(--secondary-color);
+}
+
+.hero-header,
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hero-header {
