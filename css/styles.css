@@ -38,8 +38,11 @@ body {
 
 .list {
   list-style: none;
+}
+ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-inline-start: 0;
 }
 
 /* Header */
@@ -72,6 +75,13 @@ body {
   color: var(--accent-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Hero */
 
 .hero,
@@ -79,8 +89,10 @@ body {
   background-color: var(--secondary-color);
 }
 
-.hero-header,
-.section-title {
+h1,
+h2,
+h3,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
