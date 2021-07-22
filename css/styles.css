@@ -31,6 +31,9 @@ body {
 
 .footer .logo {
   color: #fff;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .web {
   color: var(--accent-color);
@@ -84,6 +87,10 @@ ul {
 }
 
 /* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
 
 .hero,
 .footer {
@@ -103,17 +110,20 @@ p {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
-
+.section {
+  margin-bottom: 94px;
+}
 .section-title {
   color: var(--secondary-text);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* Portfolio */
@@ -178,6 +188,10 @@ p {
   background-color: var(--accent-color);
 }
 
+.hide {
+  display: none;
+}
+
 /* Peculiarities */
 
 .subheader {
@@ -186,12 +200,17 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /* Scope */
 
 /* Our team */
-
+.section.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
+}
 .team {
   background-color: var(--our-team);
 }
@@ -215,6 +234,10 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.address.list {
+  display: inline-block;
+  margin-bottom: 60px;
 }
 .contacts.link {
   color: rgba(255, 255, 255, 0.6);
