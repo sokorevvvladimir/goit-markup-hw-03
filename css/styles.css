@@ -20,6 +20,10 @@ body {
 }
 
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: #000;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -30,10 +34,11 @@ body {
 }
 
 .footer .logo {
-  color: #fff;
   display: inline-block;
   margin-top: 60px;
   margin-bottom: 20px;
+
+  color: #fff;
 }
 .web {
   color: var(--accent-color);
@@ -60,11 +65,43 @@ ul {
 }
 
 .site-nav {
+  display: flex;
+
   color: var(--secondary-text);
 }
 
+.site-nav.list {
+  margin-left: 93px;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.site-nav.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-links .item + .item {
+  margin-left: 50px;
+}
+
 .contacts-list {
+  display: block;
   color: var(--primary-text);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav:hover,
@@ -78,6 +115,16 @@ ul {
   color: var(--accent-color);
 }
 
+.container.first {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -88,8 +135,9 @@ ul {
 
 /* Hero */
 .hero {
-  text-align: center;
   margin-bottom: 94px;
+
+  text-align: center;
 }
 
 .hero,
@@ -106,24 +154,26 @@ p {
 }
 
 .hero-header {
+  margin-bottom: 30px;
+
   color: var(--primary-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 .section {
   margin-bottom: 94px;
 }
 .section-title {
+  margin-bottom: 50px;
+
   color: var(--secondary-text);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 /* Portfolio */
@@ -142,7 +192,22 @@ p {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-
+.portfolio.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter.list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .item {
+  background-color: tomato;
+}
+.container.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 /* Button types */
 
 .order-services {
@@ -162,7 +227,7 @@ p {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-  display: inline-block;
+  margin: 0 auto;
 }
 
 .filter {
@@ -195,15 +260,27 @@ p {
 /* Peculiarities */
 
 .subheader {
+  margin-bottom: 10px;
+
   color: var(--secondary-text);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+}
+.peculiarities.list {
+  display: flex;
+}
+
+.peculiarities .item + .item {
+  margin-left: 30px;
 }
 
 /* Scope */
+.scope.list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Our team */
 .section.team {
@@ -225,6 +302,9 @@ p {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+.team.list {
+  display: flex;
 }
 
 /* address */
