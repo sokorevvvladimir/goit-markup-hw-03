@@ -117,7 +117,7 @@ ul {
 .container.first {
   display: flex;
   align-items: center;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -186,11 +186,6 @@ p {
 
 /* Portfolio */
 
-.portfolio-art {
-  /* background: var(--primary-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box; */
-}
 .portfolio-title {
   color: var(--secondary-text);
   font-size: 18px;
