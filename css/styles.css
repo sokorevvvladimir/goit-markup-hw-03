@@ -6,6 +6,8 @@
 
   --primary-text: #757575;
   --secondary-text: #212121;
+
+  --item-gap: 30px;
 }
 
 body {
@@ -162,7 +164,10 @@ p {
 }
 
 .hero-header {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  width: 696px;
 
   color: var(--primary-color);
   font-weight: 900;
@@ -209,8 +214,8 @@ p {
   /* justify-content: space-between; */
   flex-wrap: wrap;
   /* background-color: teal; */
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--item-gap));
+  margin-left: calc(-1 * var(--item-gap));
 }
 .btn.list {
   display: flex;
@@ -224,8 +229,8 @@ p {
   /* background-color: tomato; */
   /* width: 370px; */
   flex-basis: calc((100% - 90px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--item-gap);
+  margin-left: var(--item-gap);
 }
 .portfolio-text {
   padding: 20px 24px;
